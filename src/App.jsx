@@ -3,6 +3,8 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import { NavLink } from "react-router";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +18,10 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>This is an Ecommerce store</h1>
+          <NavLink to="/collection/1223" end style={{color:"white"}}>
+          product Collection 1223
+          </NavLink>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
@@ -119,4 +124,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
